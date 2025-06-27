@@ -4,10 +4,12 @@
 
 html {
     font-size: 62.5%; /* == 10px */
+    scroll-behavior: smooth;
 }
 body {
     font-size: 1.6rem; /* == 16px */
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -685,7 +687,7 @@ a {
 }
 
 .blog .blog-list .blog-item {
-    width: calc(100% - 30px * 2);
+    /* width: calc(100% - 30px * 2)*0.33; */
     background-color: white;
     /* 3 item with 2 space */
     border-radius: 16px;
@@ -718,36 +720,44 @@ a {
 
 .blog .blog-item .item-body {
     padding: 20px 20px 28px;
+    /* overflow: hidden; */
 }
 
 .blog .blog-item .post-date {
+    display: inline-flex;
+    align-items: center;
     position: relative;
+    padding-bottom: 13px;
+
     font-size: 1.4rem;
-    line-height: 185.714%; /* 2.6rem */
-    padding-left: 10px;
+    line-height: 185.714%; /* 2.6rem 185.714% */
+
 }
 .blog .blog-item .post-date::before {
     content: "";
-    position: absolute;
     display: block;
     background-color: var(--primary-color);
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-right: 4px;
 }
-
-.blog .blog-item .separate {
+.blog .blog-item .post-date::after {
+    position: absolute;
+    content: "";
+    display: block;
     background: #e2dfda;
-    width: 160px;
-    height: 1px;
-    border-radius: 0.5px;
-    margin: 12px 0;
+    width: calc(100% + 0px);
+    height: 3px;
+    border-radius: 5px;
+    bottom: 0px;
 }
 
 .blog .blog-item .title {
+    margin-top: 12px;
+}
+
+.blog .blog-item .title a {
     color: #171100;
     font-size: 1.6rem;
     font-weight: 600;
@@ -806,11 +816,11 @@ a {
 
 .footer .footer-content {
     width: 100%;
+    padding-bottom: 38px;
 }
 
 .footer .footer-content .decs-block {
-    width: 267px;
-    margin-right: auto;
+    width: 34%;
 }
 
 .footer .decs-block .logo {
@@ -820,6 +830,7 @@ a {
 
 .footer .decs-block .desc {
     margin-top: 18px;
+    max-width: 269px;
 }
 
 .footer .decs-block .social-group {
@@ -863,6 +874,9 @@ a {
 .footer .footer-column li {
     margin-bottom: 12px;
 }
+.footer .footer-column li:last-child {
+    margin-bottom: 0px;
+}
 
 .footer .address strong {
     color: #fff;
@@ -874,7 +888,7 @@ a {
 /*  */
 
 .footer .content-separator {
-    margin-top: 26px;
+    /* margin-top: 26px; */
     width: 100%;
     height: 1px;
     flex-shrink: 0;
