@@ -280,7 +280,8 @@ a {
 }
 
 /* == right == */
-.hero .info .heading {width: 100%;
+.hero .info .heading {
+    width: 100%;
     color: #171100;
     font-family: "Sen", sans-serif;
     font-size: 5.8rem;
@@ -868,8 +869,8 @@ a {
 .footer .decs-block .social-group a,
 .footer .decs-block .social-group a img {
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     object-fit: contain;
 }
 
