@@ -1,0 +1,263 @@
+/* 
+                     PC 
+ */
+@media screen and (min-width: 992px) {
+    /* header */
+    /* hero */
+    /* Popular */
+    /* Feature */
+    /* blog */
+    /* footer */
+}
+
+/* TABLET & MOBILE */
+@media screen and (max-width: 991.98px) {
+    /* header */
+    /* hero */
+    .hero > .cm-main-content.row {
+        gap: 0;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .hero .media-block .main-pic {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+
+    .hero .media-block .hero-summary {
+        bottom: 0%;
+        left: 40%;
+
+        /*  */
+        min-width: auto;
+        max-width: auto;
+        width: 60%;
+    }
+
+    /* Popular */
+    .popular .course-list {
+        justify-content: center;
+    }
+
+    .popular .course-item {
+        width: 45%;
+    }
+    /* Feature */
+
+    .feature .row-spb.body {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .feature .feature-img {
+        justify-content: center;
+    }
+
+    .feature .feature-img .ft-img-1,
+    .feature .feature-img .ft-img-2 {
+        width: 40%;
+        height: auto;
+    }
+
+    .feature .feature-content {
+        width: 100%;
+        padding-left: 0%;
+        text-align: center;
+    }
+    /* CTA */
+    .CTA .cm-main-content {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .CTA .cta-content {
+        width: 100%;
+        text-align: center;
+    }
+    /* blog */
+    .blog {
+        margin-top: 20px;
+    }
+    .blog .blog-list {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .blog .blog-list .blog-item {
+        width: 48%;
+    }
+    /* footer */
+    .footer .footer-content {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        padding-bottom: 38px;
+    }
+
+    .footer .footer-content .decs-block,
+    .footer .footer-content .footer-column {
+        width: 48%;
+    }
+}
+
+/* 
+                     TABLET 
+ */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    /* header */
+    /* hero */
+    /* Feature */
+    /* blog */
+}
+
+/* 
+                     MOBILE 
+ */
+@media screen and (max-width: 767.98px) {
+    /* header */
+    .nav-bar .menu .menu-list {
+        display: none;
+    }
+
+    .p_navBar__switchBtn {
+        display: block;
+        font-size: 4rem;
+    }
+
+    .p__navBar__overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: 0.5s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .p_navBar {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 60vw;
+        background-color: white;
+        transition: 1s;
+        visibility: hidden;
+        opacity: 0;
+        translate: -120%;
+    }
+
+    .p_navBar__switch:checked ~ .p__navBar__overlay,
+    .p_navBar__switch:checked ~ .p_navBar {
+        visibility: visible;
+        opacity: 1;
+    }
+    .p_navBar__switch:checked ~ .p_navBar {
+        translate: 0;
+    }
+
+    .p_navBar {
+        padding: 30px;
+    }
+
+    .p__navBar__list {
+        margin-top: 50px;
+    }
+
+    .p__navBar__list a {
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+        margin-bottom: 5px;
+        font-size: 2rem;
+        color: black;
+    }
+
+    .p__navBar__list a.p__navBar__signUp {
+        display: none;
+        background-color: blanchedalmond;
+        margin-top: 50px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+    /* hero */
+    /* Popular */
+    .popular .popular-header .carousel-group {
+        display: none;
+    }
+
+    .p_carouselGroup {
+        display: flex;
+    }
+
+    .popular .course-item {
+        width: 100%;
+    }
+    /* Feature */
+    /* blog */
+    .blog .blog-list .blog-item {
+        width: 100%;
+    }
+    /* footer */
+    .footer .footer-content {
+
+        justify-content: center;
+
+        row-gap: 40px;
+    }
+    .footer .footer-content .decs-block,
+    .footer .footer-content .footer-column {
+        width: 90%;
+    }
+}
+
+/* 
+                     MOBILE Small
+ */
+@media screen and (max-width: 575.98px) {
+    /* header */
+    .nav-bar .menu {
+        display: none;
+    }
+
+    .p__navBar__list a.p__navBar__signUp {
+        display: block;
+    }
+    /* hero */
+    .hero .course-item .icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .hero .media-block .hero-summary {
+        padding: 20px;
+        bottom: 0%;
+        right: 0%;
+
+        /*  */
+        min-width: 40%;
+        gap: 10px;
+    }
+
+    .hero .media-block .course-item {
+        flex-wrap: wrap;
+    }
+
+    .hero .course-item .info .label {
+        font-size: 1.2rem;
+    }
+    .hero .course-item .info .title {
+        font-size: 1.4rem;
+    }
+    /* Popular */
+    /* Feature */
+    /* blog */
+    /* footer */
+}
