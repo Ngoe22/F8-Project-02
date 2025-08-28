@@ -71,7 +71,9 @@
         flex-direction: column-reverse;
         gap: 30px;
     }
-
+    .CTA .cta-img {
+        width: 90%;
+    }
     .CTA .cta-content {
         width: 100%;
         text-align: center;
@@ -88,6 +90,11 @@
 
     .blog .blog-list .blog-item {
         width: 48%;
+    }
+
+    .blog .blog-content .desc {
+        
+        width: 100%;
     }
     /* footer */
     .footer .footer-content {
@@ -206,7 +213,6 @@
     }
     /* footer */
     .footer .footer-content {
-
         justify-content: center;
 
         row-gap: 40px;

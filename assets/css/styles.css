@@ -280,7 +280,7 @@ a {
 }
 
 /* == right == */
-.hero .info .heading {
+.hero .info .heading {width: 100%;
     color: #171100;
     font-family: "Sen", sans-serif;
     font-size: 5.8rem;
